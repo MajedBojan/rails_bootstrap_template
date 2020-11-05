@@ -10,7 +10,9 @@ RAILS_REQUIREMENT = '~> 6.0'
 
 def assert_minimum_rails_version
   requirement = Gem::Requirement.new(RAILS_REQUIREMENT)
+
   rails_version = Gem::Version.new(Rails::VERSION::STRING)
+
   return if requirement.satisfied_by?(rails_version)
 
   prompt = "This template requires Rails #{RAILS_REQUIREMENT}. "\

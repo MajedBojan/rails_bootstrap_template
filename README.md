@@ -61,6 +61,9 @@ rails g scaffold_controller post title:string content:text date:date
 and it will take care of the views
 
 
+## Demo
+
+![Preview](./demo.gif)
 ### TODO:
 
 Clean up the setup and test it in real project and document it.
